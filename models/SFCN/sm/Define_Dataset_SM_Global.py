@@ -59,7 +59,7 @@ class MRIDataset_SM(Dataset):
                 min_coords[1]:max_coords[1]+1,
                 min_coords[2]:max_coords[2]+1
             ]
-            
+        
         image = torch.from_numpy(image).unsqueeze(0)  # (1, H, W, D)
 
         # ======= Data Augmentation =======

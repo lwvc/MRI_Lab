@@ -1,22 +1,48 @@
 # Ignore everything
 /*
 
-# Allow .gitignore
+# Keep .gitignore
 !/.gitignore
 
-# Allow models directory
+# Keep folders
 !/models/
+!/result/
 
-# Ignore everything inside models
-/models/**
-
-# Preserve subdirectories
+# Keep all subfolders
 !/models/**/
+!/result/**/
 
-# Only include Python and Jupyter files
+# Models: only code files
 !/models/**/*.py
 !/models/**/*.ipynb
 
-# Ignore cache
+# Result: keep everything
+!/result/**
+
+# VSCode settings
+/result/.vscode/
+/result/**/.vscode/
+
+# Medical images
+*.nii
+*.nii.gz
+
+# Compressed files
+*.zip
+*.7z
+*.rar
+
+# Cache
 **/__pycache__/
 **/.ipynb_checkpoints/
+
+# Python cache
+*.pyc
+*.pyo
+
+# Models output
+models/**/*.xlsx
+
+models/**/*.pt
+
+**/.vscode/

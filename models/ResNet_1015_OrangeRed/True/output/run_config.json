@@ -1,0 +1,45 @@
+{
+  "training_config": {
+    "execution_mode": "seed_only_v1",
+    "metadata": "both",
+    "registration": "rigid",
+    "batch_size": 4,
+    "learning_rate": 0.0001,
+    "lr_step_size": 100,
+    "lr_gamma": 0.7,
+    "scheduler": "StepLR",
+    "weight_decay": 5e-05,
+    "seed": 1,
+    "num_workers": 4,
+    "periodic_save": 100,
+    "device_type": "cuda",
+    "train_sha256": "8699a6a2813873408c8466f640e6c81daebec8b67906463bd182e80117fc2e26",
+    "val_sha256": "a28d9d50dbdf14e4c4a003588cc7fa128a4a3c2504b72cc31803f94bd7a53faa",
+    "code_sha256": {
+      "model.py": "b337afde50e0b8f98a1f44bcebe5bd5fe91d014c0448485f871a00e807813fda",
+      "dataloader.py": "7d74514979388bea1311a64ec724b69b5d304a5f2b78666e691d656c0e60e486",
+      "train.py": "34e038654751bac91160a39aa5ebdbdb2fb16efdd58f6f5ae03cde6781e9a1b6",
+      "training_state.py": "5b02d81c63ee1d0cfb76053ebc6b30a5c2575f7b9c34ce4cb1ac59685c115604"
+    }
+  },
+  "input_encoding": {
+    "SEX": "1=male->0; 2=female->1",
+    "Scanner": "1.5T->0; 3T->1"
+  },
+  "sampler_version": "age_rank_equal_count_v1",
+  "requested_epochs": 1000,
+  "environment": {
+    "python": "3.10.21",
+    "torch": "2.11.0+cu128",
+    "numpy": "1.26.4",
+    "cuda": "12.8",
+    "cudnn": 91900,
+    "platform": "Windows-10-10.0.26200-SP0",
+    "cudnn_benchmark": false,
+    "cudnn_deterministic": false,
+    "deterministic_algorithms": false,
+    "CUBLAS_WORKSPACE_CONFIG": null,
+    "device": "cuda",
+    "gpu": "NVIDIA GeForce RTX 5060 Ti"
+  }
+}
